@@ -9,6 +9,7 @@ describe('character', () => {
       health: 10,
       maxHealth: 10,
       dialogue: 'hello',
+      level: 1,
     };
     character = new Character(config);
   });
@@ -27,6 +28,9 @@ describe('character', () => {
     });
     it('has dialogue', () => {
       expect(character.dialogue).toBe(config.dialogue);
+    });
+    it('has a level', () => {
+      expect(character.level).toBe(config.level);
     });
   });
   describe('speak', () => {
