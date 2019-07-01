@@ -47,4 +47,9 @@ describe('enemy', () => {
       expect(enemy.attack(victim)).toBe(attackLine);
     });
   });
+  describe('experience reward', () => {
+      it('has an experience reward property of 100', () => {
+          expect(enemy.experienceReward).toBe(100)
+      });
+  });
 });
