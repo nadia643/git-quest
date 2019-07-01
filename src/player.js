@@ -27,7 +27,7 @@ Player.prototype.attack = function (target) {
   return this._describeAttack(target);
 };
 Player.prototype.levelUp = function (level) {
-  level += 1;
+  return level += 1;
 }
 
 module.exports = Player;

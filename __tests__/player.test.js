@@ -58,5 +58,9 @@ describe('constructor function', () => {
       const attackLine = `${player.name} lets out a ${player.dialogue}, and hits ${trainingDummy.name} with ${sword.name} for ${sword.damage} damage!`;
       expect(player.attack(trainingDummy)).toBe(attackLine);
     });
+    it('levels up', () => {
+    player.levelUp();
+    expect(player.level).toBe(1);
+    });
   });
 });
